@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo_image {
+    width: 7em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-image {
+    max-height: 10em;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.carousel-inner video {
+    width: 100%;
+    height: auto;  /* Mantiene la relación de aspecto del video */
+    max-height: 700px; /* Ajusta según tus necesidades */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar el video */
+}
+
+@media (max-width: 576px) or (max-width: 760px) {
+    .navbar-menu {
+        position: absolute;
+        top: 95px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        height: calc(50vh - 60px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar-menu.active {
+        transform: translateX(0);
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 0;
+    }
+}
