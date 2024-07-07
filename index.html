@@ -12,6 +12,7 @@
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
             rel="stylesheet">
+        <link rel="icon" href="path/to/your/favicon.ico">
         <link rel="stylesheet" href="src/css/header.css">
     </head>
     <body>
@@ -28,32 +29,7 @@
                             <span class="bar"></span>
                             <span class="bar"></span>
                         </div>
-                        <ul class="navbar-menu">
-                            <li>
-                                <button type="button"
-                                    class="btn btn-outline-primary">
-                                    <i class="bi bi-house"></i> Inicio
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button"
-                                    class="btn btn-outline-primary">
-                                    <i class="bi bi-people"></i> Quiénes somos
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button"
-                                    class="btn btn-outline-primary">
-                                    <i class="bi bi-briefcase"></i> Servicios
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button"
-                                    class="btn btn-outline-primary">
-                                    <i class="bi bi-envelope"></i> Contacto
-                                </button>
-                            </li>
-                        </ul>
+                        <ul class="navbar-menu" id="listNavbar"></ul>
                     </nav>
                 </div>
             </div>
@@ -70,28 +46,10 @@
                 </div>
             </div>
         </div>
-
         <div class="container text-center my-5">
             <h5>Nuestros Reconocimientos</h5>
             <h2>Somos un referente en la industria de la construcción</h2>
-            <div class="row justify-content-center mt-4">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="src/img/edificio_01.png" alt="Reconocimiento 1"
-                        class="img-fluid award-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="src/img/edificio_02.png" alt="Reconocimiento 2"
-                        class="img-fluid award-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="src/img/edificio_03.png" alt="Reconocimiento 3"
-                        class="img-fluid award-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="src/img/edificio_04.png" alt="Reconocimiento 4"
-                        class="img-fluid award-logo">
-                </div>
-            </div>
+            <div id="proyects" class="row justify-content-center mt-4"></div>
             <div class="row mt-4">
                 <div class="col-md-6">
                     <h5 class="fw-bold">Compromiso y Calidad en Cada
@@ -124,20 +82,21 @@
             <div class="row align-items-center">
                 <!-- Imagen a la izquierda -->
                 <div class="col-md-6">
-                    <img src="ruta-a-tu-imagen.png" class="img-fluid"
+                    <img src="src/img/Equipo_trabajo.jpg" class="img-fluid"
                         alt="Descripción de la imagen">
                 </div>
                 <!-- Texto descriptivo a la derecha -->
                 <div class="col-md-6">
                     <h1>¡Somos Tus Mejores Aliados!</h1>
                     <p>
-                        En wolkvox nos mueve la pasión. La pasión por servir,
+                        En Proyectando Fachadas nos mueve la pasión. La pasión
+                        por servir,
                         aprender, innovar y destacar en lo que hacemos.
-                        Como Great Place To Work combinamos la magia de la
-                        tecnología con la chispa de los sueños de nuestro equipo
+                        Trabajando con altura combinamos la agilidad y fuerza
+                        con la chispa de ingenio de nuestro equipo de trabajo
                         para crear un entorno de bienestar y éxito.
                     </p>
-                    <a href="https://www.wolkvox.com/"
+                    <a href="https://www.fachadas.com/"
                         class="btn btn-primary">Conoce más</a>
                 </div>
             </div>
@@ -145,39 +104,15 @@
         <div class="container text-center my-5">
             <h5>Nuestros clientes</h5>
             <h2>Ellos confían en nosotros</h2>
-            <div class="row justify-content-center mt-4">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="https://via.placeholder.com/150" alt="Cliente 1"
-                        class="img-fluid client-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="https://via.placeholder.com/150" alt="Cliente 2"
-                        class="img-fluid client-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="https://via.placeholder.com/150" alt="Cliente 3"
-                        class="img-fluid client-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="https://via.placeholder.com/150" alt="Cliente 4"
-                        class="img-fluid client-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="https://via.placeholder.com/150" alt="Cliente 5"
-                        class="img-fluid client-logo">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <img src="https://via.placeholder.com/150" alt="Cliente 6"
-                        class="img-fluid client-logo">
-                </div>
-            </div>
+            <div id="logoCustomer"
+                class="row justify-content-center mt-4"></div>
         </div>
 
         <div class="container my-5 custom-container">
             <div class="row align-items-center">
                 <!-- Imagen a la izquierda -->
                 <div class="col-md-6">
-                    <img src="ruta-a-tu-imagen.png" class="img-fluid"
+                    <img src="src/img/atencion _cliente.jpg" class="img-fluid"
                         alt="Descripción de la imagen">
                 </div>
                 <!-- Información de contacto a la derecha -->
@@ -209,6 +144,7 @@
             </div>
         </footer>
         <script src="src/js/header.js"></script>
+        <script src="src/js/index.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
