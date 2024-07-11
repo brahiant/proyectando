@@ -37,23 +37,6 @@ async function getListProyect() {
     }
 }
 
-async function getListLogoCustomer() {
-    const count = 6;
-    const div = document.querySelector('#logoCustomer');
-    div.innerHTML = '';
-    if (!div) {
-        console.error('Elemento de lista del navbar no encontrado');
-        return;
-    }
-    for (let i = 0; i < count; i++) {
-        let newDiv = document.createElement('div');
-        newDiv.className = 'col-6 col-md-4 col-lg-2';
-        newDiv.innerHTML = 
-        `<img src="src/img/logo_empresa_${i+1}.jpg" alt="Reconocimiento 1" class="img-fluid client-logo">`;
-        div.appendChild(newDiv);
-    }
-}
 
 getListNavbarMenu();
 getListProyect();
-getListLogoCustomer();
