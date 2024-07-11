@@ -8,6 +8,10 @@ body {
     width: 7em;
 }
 
+#listNavbar button{
+   margin-right: 1em; 
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
