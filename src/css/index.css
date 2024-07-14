@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /* Evita el scroll horizontal */
+}
+
+.carousel-inner video {
+    width: 100%;
+    height: auto;
+    /* Mantiene la relación de aspecto del video */
+    max-height: 700px;
+    /* Ajusta según tus necesidades */
+    object-fit: cover;
+    /* Cubre el contenedor sin distorsionar el video */
+}
+
+.client-logo {
+    max-height: 100px;
+    margin: 20px;
+    transition: transform 0.2s;
+}
+
+.client-logo:hover {
+    transform: scale(1.1);
+}
+
+.custom-container {
+    background-color: #B3E5FC;
+    /* Color pastel azul */
+    border: 1px solid #ddd;
+    /* Borde suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border-radius: 8px;
+    /* Bordes redondeados opcionales */
+    padding: 20px;
+    /* Espaciado interno */
+}
+
+.contact-info i {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #25D366;
+    /* Color de WhatsApp */
+}
+
+.contact-info .email-icon {
+    color: #D44638;
+    /* Color del email */
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #bc8f5a;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-item h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-item p {
+    margin-bottom: 0;
+}
