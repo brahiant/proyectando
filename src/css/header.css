@@ -87,6 +87,23 @@ body {
     color: #D44638; /* Color del email */
 }
 
+.service-icon {
+    font-size: 40px;
+    color: #bc8f5a;
+  }
+  .service-item {
+    text-align: center;
+    padding: 20px;
+  }
+  .service-item h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .service-item p {
+    margin-bottom: 0;
+  }
+
 @media (max-width: 576px) or (max-width: 760px) {
     .navbar-menu {
         position: absolute;
