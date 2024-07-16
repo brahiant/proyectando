@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function getListNavbarMenu() {
     const listMenu = [
-        { name: 'Inicio', icon: 'bi bi-house', href: 'index.php' },
-        { name: 'Quiénes somos', icon: 'bi bi-people', href: 'quienes_somos.php' },
-        { name: 'Servicios', icon: 'bi bi-briefcase', href: 'servicios.php' },
-        { name: 'Contacto', icon: 'bi bi-envelope', href: 'contacto.php' }
+        { name: 'Inicio', icon: 'bi bi-house', href: 'index.html' },
+        { name: 'Quiénes somos', icon: 'bi bi-people', href: 'quienes_somos.html' },
+        { name: 'Servicios', icon: 'bi bi-briefcase', href: 'servicios.html' },
+        { name: 'Contacto', icon: 'bi bi-envelope', href: 'contacto.html' }
     ];
 
     const ul = document.querySelector('#listNavbar');

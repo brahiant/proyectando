@@ -1,0 +1,17 @@
+.hero-background {
+    background-image: url('../img/fondo_herramienta.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+.card-hover:hover {
+    background-color: #4e80bc;
+    color: white;
+}
+.card-hover:hover .card-text {
+    color: white;
+}
+.card-text {
+    color: black;
+}
