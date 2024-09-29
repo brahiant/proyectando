@@ -1,0 +1,38 @@
+.custom-container {
+    background-color: #b8cce4;
+    /* Color pastel azul */
+    border: 1px solid #ddd;
+    /* Borde suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border-radius: 8px;
+    /* Bordes redondeados opcionales */
+    padding: 20px;
+    /* Espaciado interno */
+}
+
+.contact-info i {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #25D366;
+    /* Color de WhatsApp */
+}
+
+.contact-info .email-icon {
+    color: #D44638;
+    /* Color del email */
+}
+
+@media (max-width: 768px) {
+    .custom-container {
+        padding: 15px; /* Menor espaciado en móviles */
+    }
+
+    .contact-info {
+        text-align: center; /* Centrar texto en móviles */
+    }
+
+    .bg-custom {
+        margin-top: 20px; /* Espacio entre el mapa y el texto */
+    }
+}
